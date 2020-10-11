@@ -1,0 +1,143 @@
+$primary_color: #2e425a;
+$secondary_color: #2fdae6;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: box-sizing;
+}
+
+body {
+  background-color: $primary_color;
+  color: white;
+  font-family: "Syne", sans-serif;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .header {
+    font-family: "Cabin Sketch", cursive;
+  }
+  span {
+    color: $secondary_color;
+  }
+  form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    select,
+    button {
+      width: 300px;
+    }
+    select:invalid {
+      color: gray;
+    }
+    option {
+      color: black;
+    }
+    button {
+      padding: 15px 0;
+      background-color: inherit;
+      color: white;
+      border: 1px solid white;
+      font-weight: 700;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        background-color: $secondary_color;
+      }
+    }
+  }
+}
+
+.question {
+  .top-info {
+    margin-top: 50px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    span {
+      color: $secondary_color;
+    }
+  }
+  .questionarea {
+    padding: 40px 0;
+    p {
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+  }
+  .joker-btn {
+    background-color: $secondary_color;
+    color: white;
+    padding: 10px;
+  }
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  button {
+    width: 800px;
+    padding: 10px;
+    text-align: left;
+    margin: 5px;
+  }
+}
+
+.right-answer {
+  .next-btn {
+    background-color: $secondary_color;
+    color: white;
+    padding: 10px;
+  }
+  h1 {
+    color: $secondary_color;
+    span {
+      color: white;
+    }
+  }
+}
+
+.wrong-answer {
+  button {
+    background-color: $secondary_color;
+    color: white;
+    padding: 10px;
+  }
+}
+
+.timeisup {
+  button {
+    background-color: $secondary_color;
+    color: white;
+    padding: 10px;
+    width: 140px;
+    margin-top:50px;
+  }
+  h1{
+    span{
+      color:$secondary_color;
+      font-weight: 600;
+    }
+  }
+}
+
+.final-success{
+  h3{
+    span{
+      color:$secondary_color;
+      font-weight: 600;
+    }
+  }
+  button {
+    background-color: $secondary_color;
+    color: white;
+    padding: 10px;
+  }
+  
+}

@@ -1,13 +1,168 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  -webkit-box-sizing: box-sizing;
+          box-sizing: box-sizing;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #2e425a;
+  color: white;
+  font-family: "Syne", sans-serif;
 }
+
+.home {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .header {
+  font-family: "Cabin Sketch", cursive;
+}
+
+.home span {
+  color: #2fdae6;
+}
+
+.home form {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home form select,
+.home form button {
+  width: 300px;
+}
+
+.home form select:invalid {
+  color: gray;
+}
+
+.home form option {
+  color: black;
+}
+
+.home form button {
+  padding: 15px 0;
+  background-color: inherit;
+  color: white;
+  border: 1px solid white;
+  font-weight: 700;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.home form button:hover {
+  background-color: #2fdae6;
+}
+
+.question .top-info {
+  margin-top: 50px;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.question .top-info span {
+  color: #2fdae6;
+}
+
+.question .questionarea {
+  padding: 40px 0;
+}
+
+.question .questionarea p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.question .joker-btn {
+  background-color: #2fdae6;
+  color: white;
+  padding: 10px;
+}
+
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.options button {
+  width: 800px;
+  padding: 10px;
+  text-align: left;
+  margin: 5px;
+}
+
+.right-answer .next-btn {
+  background-color: #2fdae6;
+  color: white;
+  padding: 10px;
+}
+
+.right-answer h1 {
+  color: #2fdae6;
+}
+
+.right-answer h1 span {
+  color: white;
+}
+
+.wrong-answer button {
+  background-color: #2fdae6;
+  color: white;
+  padding: 10px;
+}
+
+.timeisup button {
+  background-color: #2fdae6;
+  color: white;
+  padding: 10px;
+  width: 140px;
+  margin-top: 50px;
+}
+
+.timeisup h1 span {
+  color: #2fdae6;
+  font-weight: 600;
+}
+
+.final-success h3 span {
+  color: #2fdae6;
+  font-weight: 600;
+}
+
+.final-success button {
+  background-color: #2fdae6;
+  color: white;
+  padding: 10px;
+}
+/*# sourceMappingURL=index.css.map */

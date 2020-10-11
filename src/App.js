@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Home from "./Components/Home";
+import Question from "./Components/Question";
+import RightAnswer from './Components/RightAnswer';
+import TimeisUp from './Components/TimeisUp'
+import WrongAnswer from './Components/WrongAnswer'
+import FinalSuccess from './Components/FinalSuccess'
+import { BrowserRouter, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Route exact path="/" component={Home}/>
+        <Route path="/question" component={Question} />
+        <Route path="/right" component={RightAnswer} />
+        <Route path="/timeisup" component={TimeisUp} />
+        <Route path="/wrong" component={WrongAnswer} />
+        <Route path="/finished" component={FinalSuccess} />
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
