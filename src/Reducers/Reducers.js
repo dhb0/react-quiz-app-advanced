@@ -12,6 +12,7 @@ const questionTypeReducer = (
       return { ...state, level: payload };
     case "SET_CATEGORY":
       return { ...state, category: payload };
+    case "RESET_ALL": return {level:"easy", category:""}
     default:
       return state;
   }
